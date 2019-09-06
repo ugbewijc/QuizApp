@@ -1,0 +1,129 @@
+/*
+
+  main css for quiz app
+
+*/
+
+*{
+  padding: 0;
+  margin:0;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body{
+  background-color: #cccccc;
+  font-family:"Courier New","serif","Consolas";
+  padding-left: 10vw;
+  padding-right: 10vw;
+  color: #fff;
+}
+
+main{
+  background: linear-gradient(to bottom right, rgba(30, 203, 255, 1), rgba(172, 115, 255, 1));
+  /*margin: 0,60px,0,20vw;
+  margin-left:60px;
+  padding: 4vw 12vw 4vw 4vw;*/
+  min-height: 100vh;
+}
+
+.logo{
+  padding: 2vh 0 0 4vw ;
+}
+
+section{
+  padding: 2vh 12vw 4vh 4vw;
+}
+
+#question-number{
+  color: #f3fdff;
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 0.6em;
+  text-transform: uppercase;
+}
+
+#question{
+  color: #fff;
+  padding-bottom: 4vh;
+  font-size: 2.5em;
+  font-weight: 600;
+  border-bottom: 1px solid #f3fdff;
+  text-transform: capitalize;
+}
+
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 5vh;
+  min-width: 73vw;
+}
+
+.buttons button{
+  color: #5398de;
+  background-color: #fff;
+  box-shadow: 2px 8px 22px #555;
+  cursor: pointer;
+  min-width: 30vw;
+  border-radius: 18px;
+  padding: 2%;
+  margin: 2%;
+  font-size: xx-large;
+  text-transform: capitalize;
+}
+
+.buttons button:hover{
+  background-color: #75787d;
+  color:#fff;
+}
+.disable-button button{
+  pointer-events: none;
+  cursor: default;
+}
+
+button:disabled{
+  pointer-events: none;
+}
+
+.correct{
+  border: 8px solid green;
+}
+
+.in-correct{
+  border: 8px solid red;
+}
+
+#skip{
+    font-style: italic;
+    height: 1.7em;
+}
+#skip:disabled{
+  visibility: hidden;
+}
+
+#result{
+  font-size: x-large;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 1px;
+  padding: 2vh 4vw 2vh 4vw;
+  margin-top: 2vh;
+  vertical-align: middle;
+  background: linear-gradient(to right, #544e96, #6d3c95);
+  font-size: 20px;
+}
+#text-right{
+  font-size: x-large;
+  font-weight: 700;
+  text-transform: uppercase;
+}
